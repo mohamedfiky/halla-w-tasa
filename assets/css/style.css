@@ -709,7 +709,7 @@ footer .lower-footer{
 /**********************************************************/
 /**********************************************************/
 
-/*************************************** products.html ***********************************/
+/********************************* products.html *******************************/
 
 /**********************************************************/
 
@@ -793,9 +793,6 @@ footer .lower-footer{
   left:240px;
 }
 
-
-
-
 .product-list-page{
   overflow: hidden;
 }
@@ -838,8 +835,6 @@ footer .lower-footer{
   font-size: 14px;
   margin: 10px auto 20px;
 }
-
-
 
 .product-list-page .details .price-area{
   display: flex;
@@ -1249,7 +1244,11 @@ footer .lower-footer{
 .sign-in-page h2{
   color:#1A43A8;
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+.sign-in-page h2:hover a{
+  text-decoration: underline;
 }
 
 .sign-in-page div{
@@ -1316,46 +1315,50 @@ footer .lower-footer{
 .sign-in-page form a{
   padding: 10px;
   color: #1A43A8;
-  font-weight: bold;
   display: block;
 }
 
 .sign-in-page form a:hover{
-  color: #5082ffce
+  text-decoration: underline;
 }
 
 .sign-in-page form button{
-  display: inline-block;
-  padding: 10px 60px;
-  margin: 50px auto;
+  display: block;
+  width:60%;
+  padding: 12px;
+  margin: 50px auto 25px;
   font-weight: bold;
-  background-color: #fff ;
+  font-size: 18px;
+  background-color: #1A43A8 ;
   border: 1px solid #1A43A8;
-  color:#1A43A8;
+  color:#fff;
   border-radius: 50px;
 }
 
 .sign-in-page form button:hover{
-  background-color: #1A43A8 ;
-  border: 1px solid #1A43A8;
-  color:#fff;
-}
-
-.sign-in-page form button[type="submit"]{
-
-  margin-right: 80px;
-  font-weight: bold;
-  background-color: #1A43A8 ;
-  border: 1px solid #1A43A8;
-  color:#fff;
-}
-
-.sign-in-page form button[type="submit"]:hover{
   background-color: #fff ;
   border: 1px solid #1A43A8;
   color:#1A43A8;
 }
 
+
+
+@media (max-width: 1199px){
+  .sign-in-page{
+    width:60%;
+  }
+  
+  .sign-in-page div h3{
+    margin-bottom: 20px;
+  }
+
+  .sign-in-page form input,
+  .sign-in-page form button[type="submit"]{
+    width:100%;
+
+  }
+
+}
 
 
 @media (max-width: 768px){
@@ -1368,26 +1371,28 @@ footer .lower-footer{
   }
 
   .sign-in-page form input,
-  .sign-in-page form input[type="submit"]{
+  .sign-in-page form button[type="submit"]{
+    width:100%;
+  }
+
+}
+
+@media (max-width: 575px){
+  .sign-in-page{
+    width:100%;
+  }
+  
+  .sign-in-page div h3{
+    margin-bottom: 20px;
+  }
+
+  .sign-in-page form input,
+  .sign-in-page form button[type="submit"]{
     width:100%;
   }
 }
 
-@media (max-width: 575px){
 
-
-  .sign-in-page form button{
-    padding: 10px 22px;
-
-  }
-
-  .sign-in-page form button[type="submit"]{
-
-    margin-right: 15px;
-
-  }
- 
-}
 
 
 /**********************************************************/
@@ -1408,7 +1413,11 @@ footer .lower-footer{
 .sign-up-page h2{
   color:#1A43A8;
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+.sign-up-page h2:hover a{
+  text-decoration: underline;
 }
 
 .sign-up-page div{
@@ -1439,7 +1448,7 @@ footer .lower-footer{
 /**************/
 
 .sign-up-page form{
-  padding: 10px 10px 30px;
+  padding: 10px;
   
 }
 
@@ -1494,40 +1503,60 @@ footer .lower-footer{
  display: none;
 }
 
+.sign-up-page form a{
+  padding: 10px;
+  color: #1A43A8;
+  display: block;
+}
+
+.sign-up-page form a:hover{
+  text-decoration: underline;
+}
+
 .sign-up-page form button{
-  display: inline-block;
-  padding: 10px 60px;
-  margin: 50px auto;
+  display: block;
+  width:60%;
+  padding: 12px;
+  margin: 50px auto 25px;
   font-weight: bold;
-  background-color: #fff ;
+  font-size: 18px;
+  background-color: #1A43A8 ;
   border: 1px solid #1A43A8;
-  color:#1A43A8;
+  color:#fff;
   border-radius: 50px;
 }
 
 .sign-up-page form button:hover{
-  background-color: #1A43A8 ;
-  border: 1px solid #1A43A8;
-  color:#fff;
-}
-
-.sign-up-page form button[type="submit"]{
-
-  margin-right: 80px;
-  font-weight: bold;
-  background-color: #1A43A8 ;
-  border: 1px solid #1A43A8;
-  color:#fff;
-}
-
-.sign-up-page form button[type="submit"]:hover{
   background-color: #fff ;
   border: 1px solid #1A43A8;
   color:#1A43A8;
 }
 
 
+@media (max-width: 1199px){
+ 
+ 
+  .sign-up-page{
+    width:60%;
+  }
+  
+  .sign-up-page div h3{
+    margin-bottom: 20px;
+  }
+
+  .sign-up-page form input,
+  .sign-up-page form button[type="submit"]{
+    width:100%;
+  }
+
+
+}
+
+
+
 @media (max-width: 768px){
+  
+  
   .sign-up-page{
     width:90%;
   }
@@ -1537,23 +1566,29 @@ footer .lower-footer{
   }
 
   .sign-up-page form input,
-  .sign-up-page form input[type="submit"]{
+  .sign-up-page form button[type="submit"]{
     width:100%;
   }
+
+
 }
+
 
 @media (max-width: 575px){
 
 
-  .sign-up-page form button{
-    padding: 10px 22px;
+  .sign-up-page{
+    width: 100%;
 
   }
 
+  .sign-up-page div h3{
+    margin-bottom: 20px;
+  }
+
+  .sign-up-page form input,
   .sign-up-page form button[type="submit"]{
-
-    margin-right: 15px;
-
+    width:100%;
   }
 
   .sign-up-page form select{
@@ -1569,6 +1604,13 @@ footer .lower-footer{
   }
  
 }
+
+
+
+
+
+
+
 
 
 
